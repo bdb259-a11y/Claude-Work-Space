@@ -83,6 +83,37 @@ body {
   cursor: pointer;
 }
 
+/* ─── CV PAGE ─── */
+.cv-page-header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 2.5rem 0 2rem;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--teal-lt);
+  text-decoration: none;
+  font-size: .85rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  transition: color .2s;
+}
+
+.back-link:hover { color: var(--white); }
+
+.cv-page-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: .4rem;
+}
+
+.cv-page-sub {
+  color: rgba(255,255,255,.65);
+  font-size: .9rem;
+}
+
 /* ─── HERO ─── */
 .hero {
   background: linear-gradient(135deg, var(--navy) 0%, #1e4060 100%);
@@ -154,6 +185,23 @@ body {
 }
 
 .btn:hover { background: var(--teal-lt); transform: translateY(-1px); }
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid rgba(255,255,255,.5);
+  color: var(--white);
+}
+
+.btn-outline:hover {
+  background: rgba(255,255,255,.1);
+  border-color: var(--white);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
 
 .hero-avatar {
   flex-shrink: 0;
@@ -288,6 +336,39 @@ body {
 .pub-note {
   font-style: italic;
   color: #9ca3af;
+}
+
+/* ─── RESEARCH GRID ─── */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.4rem;
+}
+
+.research-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  border-top: 3px solid var(--teal);
+}
+
+.research-icon {
+  font-size: 1.8rem;
+  margin-bottom: .8rem;
+}
+
+.research-card h3 {
+  font-size: .95rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: .5rem;
+}
+
+.research-card p {
+  font-size: .875rem;
+  color: var(--gray);
+  line-height: 1.65;
 }
 
 /* ─── EXPERTISE ─── */
